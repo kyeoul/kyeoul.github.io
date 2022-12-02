@@ -1,0 +1,39 @@
+.bio{
+    flex-grow: 1;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+}
+
+.bio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.bio img{
+    height: 450px;
+}
+
+.bio .bio-text{
+    height: 450px;
+    padding-left: 20px;
+}
+
+.bio-text h1{
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bio-text h4{
+    font-size: 1.2em;
+}
+
+.bio-text p{
+    font-size: 1.1em;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Park</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Jay Park
+        </div>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./bio.html">Bio</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="landing">
+        <div class="landing-header">
+            <h1>Jay Park</h1>
+            <img src="./res/selfie.png" alt="Jay Park selfie"/>
+        </div>
+        <h4>A computer scientist. A frontend developer. An eternal student.</h4>
+        <h3>Current Projects:</h3>
+        <div class="projects">
+            <div class="card" onclick="navToProjectClick('nufintech')" onkeypress="return navToProjectEnter(event, 'nufintech')" tabindex="1">
+                <div class="project-header">
+                    <h3>NU Fintech</h3>
+                    <img src="./res/nuft.png" alt="NU Fintech logo"/>
+                </div>
+                <p>
+                    Northwestern's Quant Trading club for CS and Econ students. Currently involved in data acquisition and web development for NU Fintech's infrastructure team.
+                </p>
+            </div>
+
+            <div class="card" onclick="navToProjectClick('spotify-t20')" onkeypress="return navToProjectEnter(event, 'spotify-t20')"   tabindex="1">
+                <div class="project-header">
+                    <h3>Spotify Top 20 Player</h3>
+                    <img src="./res/spotify.png" alt="Spotify logo"/>
+                </div>
+                <p>
+                    Personal project involving Node.js HTTP requests and Spotify's web API to authenticate with Spotify's OAuth service and fetch metadata regarding playlists and tracks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function navToProjectClick(project){
+            window.location.href = "./project.html#" + project
+        }
+
+        function navToProjectEnter(event, project){
+            if(event.keyCode == 13){
+                window.location.href = "./project.html#" + project
+            }
+        }
+    </script>
+</body>
+</html>

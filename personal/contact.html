@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Park - Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Jay Park
+        </div>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./bio.html">Bio</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="contacts">
+        <div class="contact-half">
+            <div class="form">
+                <h1>Contact me:</h1>
+                <div class="form-row" id="firstlast">
+                    <div class="form-input">
+                        <label for="first">First</label>
+                        <input id="first" name="first"/>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="last">Last</label>
+                        <input id="last" name="last"/>
+                    </div>
+                </div>
+
+                <div class="form-row" id="email-form">
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input id="email" name="email"/>
+                    </div>
+                </div>
+
+                <div class="form-row" id="phone-form">
+                    <div class="form-input">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone"/>
+                    </div>
+                </div>
+
+                <div class="form-row" id="phone-form">
+                    <div class="form-input">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone"/>
+                    </div>
+                </div>
+
+                <div class="form-row" id="message">
+                    <div class="form-input">
+                        <label for="message">Message to send</label>
+                        <textarea id="message" name="message">
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <button>Submit</button>
+            </div>
+        </div>
+
+        <div class="contact-half socials">
+            <div>
+                <h1>Check out my socials:</h1>
+                <div class="social-link">
+                    <i data-feather="github"></i>
+                    <a href="https://github.com/kyeoul" target="_blank">https://github.com/kyeoul</a>
+                </div>
+
+                <div class="social-link">
+                    <i data-feather="linkedin"></i>
+                    <a href="https://www.linkedin.com/in/jihoon-park-05aab5228/" target="_blank">https://www.linkedin.com/in/jihoon-park-05aab5228/</a>
+                </div>
+
+                <div class="social-link">
+                    <i data-feather="clipboard"></i>
+                    <a href="https://drive.google.com/file/d/1OZcN-_ZwJGzjBtnjsKTs4z39Vj94a4bT/view?usp=sharing" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
