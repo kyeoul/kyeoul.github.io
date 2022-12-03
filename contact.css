@@ -29,6 +29,10 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.form button:focus{
+    border: 2px solid blue;
+}
+
 .contact-half{
     flex: 1;
     display: flex;
